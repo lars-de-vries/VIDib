@@ -2,17 +2,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
 /**************/
 /* CSS REMEDY */
 /**************/
@@ -61,7 +50,7 @@ img {
 
 p {
   color:var(--color-text);
-  font-size: clamp(2rem, 2.5vw, 5rem);
+  font-size: clamp(2rem, 2.75vw, 5rem);
   font-family: "hobeaux", sans-serif;
   font-weight: 700;
   font-style: normal;
@@ -159,8 +148,11 @@ body section {
 
 
 video {
-  width: 40%;
+  width: 30%;
   display: inline-block;
+
+  object-fit: cover !important;
+  border-radius: 20px !important;
 }
 
 
