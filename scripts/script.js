@@ -14,6 +14,9 @@ var danceAnimation = document.querySelector('.dance-animation');
 
 waveButton.addEventListener('click', function(){
     idleAnimation.classList.add('hide');
+    idleAnimation.pause();
+    idleAnimation.currentTime = 0;
+
     jumpAnimation.classList.add('hide');
     danceAnimation.classList.add('hide');
     waveAnimation.classList.remove('hide');
@@ -21,11 +24,15 @@ waveButton.addEventListener('click', function(){
     setTimeout( () => {
         waveAnimation.classList.add('hide');
         idleAnimation.classList.remove('hide');
-    }, 2000);
+        idleAnimation.play();
+    }, 2100);
 });
 
 jumpButton.addEventListener('click', function(){
     idleAnimation.classList.add('hide');
+    idleAnimation.pause();
+    idleAnimation.currentTime = 0;
+
     waveAnimation.classList.add('hide');
     danceAnimation.classList.add('hide');
     jumpAnimation.classList.remove('hide');
@@ -33,11 +40,15 @@ jumpButton.addEventListener('click', function(){
     setTimeout( () => {
         jumpAnimation.classList.add('hide');
         idleAnimation.classList.remove('hide');
-    }, 2000);
+        idleAnimation.play();
+    }, 2100);
 });
 
 danceButton.addEventListener('click', function(){
     idleAnimation.classList.add('hide');
+    idleAnimation.pause();
+    idleAnimation.currentTime = 0;
+
     waveAnimation.classList.add('hide');
     jumpAnimation.classList.add('hide');
     danceAnimation.classList.remove('hide');
@@ -45,7 +56,8 @@ danceButton.addEventListener('click', function(){
     setTimeout( () => {
         danceAnimation.classList.add('hide');
         idleAnimation.classList.remove('hide');
-    }, 2000);
+        idleAnimation.play();
+    }, 2100);
 });
 
 
